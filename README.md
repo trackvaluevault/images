@@ -48,3 +48,11 @@ export default tseslint.config({
   },
 })
 ```
+
+## Notes
+
+This tests static asset serving. 
+
+- Static assets are accessible via `host/<asset-path>/<asset-name>`
+  - For example, `public/download.png` becomes `https://base-route/download.png` after running `npm run build`
+  - [documentation](https://developers.cloudflare.com/workers/static-assets/)
